@@ -167,12 +167,12 @@ router.get('/extractSeq/:id', function(req, res){
 				var st=abc.replace (/"/g,'');
 				var xyz = [];
 				xyz = st.split('\n');
-				console.log(xyz);
+				//console.log(xyz);
 				for(var a=0;a<xyz.length;a++){
 					 var num = xyz[a].split("->").length - 1;
                 var num2 = xyz[a].split("-->").length - 1;
                 var num3 = xyz[a].split("|").length - 1;
-				console.log(num+"....."+num2);
+				//console.log(num+"....."+num2);
 			    if(num > 0 || num2 > 0){
 					 var str = xyz[a].split("[");
 					 if(num3 < 1){
@@ -207,7 +207,7 @@ router.get('/extractSeq/:id', function(req, res){
                         }
                     }
 					if(a==xyz.length-1){
-						console.log(str3);
+						//console.log(str3);
 						res.json(str3);
 					}
                 }
