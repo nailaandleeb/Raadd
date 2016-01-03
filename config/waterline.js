@@ -17,11 +17,11 @@ module.exports = {
     mysqlDB: {
       adapter: 'mysqlAdapt',
       
-	 user : process.env.OPENSHIFT_MYSQL_DB_USERNAME || "root",
-		password : process.env.OPENSHIFT_MYSQL_DB_PASSWORD || "",
-		database : process.env.OPENSHIFT_GEAR_NAME || 'classDiagram',
-		host:process.env.OPENSHIFT_MYSQL_DB_HOST || "localhost",
-		port:process.env.OPENSHIFT_MYSQL_DB_PORT,
+	 user : "sql6101744",
+		password :"FeEyYDyriK",
+		database : 'sql6101744',
+		host:"sql6.freemysqlhosting.net",
+		port:3306,
 		
       supportBigNumbers:true, //true/false
       debug:false,  //['ComQueryPacket'], //false or array of node-mysql debug options
