@@ -1,12 +1,7 @@
 var mysqlAdapter = require('sails-mysql');
 
-//var mongoAdapter = require('sails-mongo');
 module.exports = {
-
-  // Setup Adapters
-  // Creates named adapters that have have been required
   adapters: {
-   // mongoAdapt: mongoAdapter
     mysqlAdapt: mysqlAdapter
   },
 

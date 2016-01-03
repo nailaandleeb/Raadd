@@ -35,6 +35,6 @@ waterlineOrm.initialize(waterlineConfig, function (err, models) {
     db.collections = models.collections;
     db.connections = models.connections;
  });
- http.createServer(app).listen(1234, function () {
-        console.log('Express server listening on port ' + 1234);
+ http.createServer(app).listen(3000, function () {
+        console.log('Express server listening on port ' + 3000);
  });
