@@ -1,0 +1,20 @@
+nomnoml:	raadd
+1- use case diagrams
+	new
+	one
+	two
+2- object diagrams
+	new
+	extract
+	one
+	two
+3- sequence diagrams
+	new
+	extract
+	one
+	two
+4- class diagrams
+	new
+	extract
+	one
+	two
