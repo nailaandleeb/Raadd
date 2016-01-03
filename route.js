@@ -172,14 +172,17 @@ router.get('/extractSeq/:id', function(req, res){
 					 var num = xyz[a].split("->").length - 1;
                 var num2 = xyz[a].split("-->").length - 1;
                 var num3 = xyz[a].split("|").length - 1;
+				console.log(num+"....."+num2);
 			    if(num > 0 || num2 > 0){
-					//console.log(xyz[a]);
-                    var str = xyz[a].split("[");
-					console.log(str);
-                    if(num3 < 1){
+					 var str = xyz[a].split("[");
+					 if(num3 < 1){
                         str3 +=xyz[a].replace(/[\[\]']/g,'' );
                         str3 += ':\n';
-						//console.log(1);
+						if(a==xyz.length-1){
+						console.log(str3);
+						res.json(str3);
+					}
+						
                     }else{
                         var str = xyz[a].split(']');
 						//console.log(str);
@@ -208,7 +211,12 @@ router.get('/extractSeq/:id', function(req, res){
 						res.json(str3);
 					}
                 }
-				
+				else{
+					if(a==xyz.length-1){
+						res.json({message:"invalid Diagram for extract"});
+					}
+					
+				}
 				}
 					
 			}
